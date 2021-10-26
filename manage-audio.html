@@ -12,8 +12,10 @@
 		<div class="audio-record">
 			<button id="recordButton">Start Recording</button>
 			<button id="stopButton" class="inactive">Stop</button>
-			<!-- src is defined in js -->
-			<audio src="" controls id="audio-playback" class="hidden"></audio>
+		</div>
+
+		<div class="playback">
+				<audio src="" controls id="audio-playback" class="hidden"></audio>
 		</div>
 
 		<div class="download">
@@ -24,7 +26,7 @@
 		<div class="recorder-instructions">
 			<div class="step-1A">
 				<h2>Step 1 &#45; Press the Record Button</h2>
-				<p>Click on the green "Start Recording" button.</p>
+				<p>Click on the "Start Recording" button.</p>
 			</div>
 
 			<div class="step-2A">
@@ -34,7 +36,7 @@
 
 			<div class="step-3A">
 				<h2>Step 3 &#45; Stop Recording</h2>
-				<p>It will automatically stop recording when you reach the duration limit, or you can stop it anytime by clicking on the "Stop" button.</p>
+				<p>Recording will automatically stop when you reach the duration limit, or you can stop it anytime by clicking on the "Stop" button.</p>
 			</div>
 
 			<div class="step-4A">
@@ -44,8 +46,7 @@
 
 			<div class="step-5A">
 				<h2>Step 5 &#45; Download Your Audio Recording</h2>
-				<p>If you are happy with your final recording, click the "Save Audio" button. When the audio file is successfully
-					saved, a yellow "Notice" field will appear above to confirm. You can now exit this page.</p>
+				<p>If you are happy with your final recording, click the "Download Audio" button.</p>
 			</div>
 		</div>
 		<script src="manage-audio.js"></script>

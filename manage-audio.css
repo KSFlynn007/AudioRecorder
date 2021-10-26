@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
+
 body {
     font-size: 15px;
+    background-color: #1E1014;
 }
 
 /* used to set default load to show Option A until toggled */
@@ -13,19 +16,42 @@ body {
     cursor: default !important;
 }
 
+h1{
+    font-family: 'Bebas Neue',cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    color: #FBBA72;
+    display: flex;
+    justify-content: center;
+}
+
 .recorder-instructions
 {
-    margin: 10px 0 0 10px;
+    margin: 30px auto;
+    width: 80%;
+    padding: 5px 5px 20px 5px;
+    background-color: rgb(220, 253, 225);
+}
+
+.step-1A,
+.step-2A,
+.step-3A,
+.step-4A,
+.step-5A{
+    width: 90%;
+    margin: auto;
 }
 
 .recorder-instructions>*>h2
 {
-    font-size: 18px;
-    color: #666;
+    font-size: 16px;
+    color: #1E1014;
+    margin-bottom: 3px;
 }
 
 .recorder-instructions>*>p {
     margin: 0;
+    font-size: 14px;
 }
 
 /* recorder buttons start */
@@ -33,6 +59,7 @@ body {
     padding: 10px 10px 20px 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #recordButton {
@@ -40,8 +67,8 @@ body {
     letter-spacing: 4px;
     font-weight: bold;
     font-size: 18px;
-    color: #fff;
-    background: #01C460;
+    color: #1E1014;
+    background: #CAFFD0;
     border: none;
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
@@ -55,11 +82,11 @@ body {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0px 0px 3px 1px #01c45f70;
+        box-shadow: 0px 0px 3px 1px #7eda88;
     }
 
     100% {
-        box-shadow: 0px 0px 3px 10px #01c45f70;
+        box-shadow: 0px 0px 3px 10px #7eda88;
 
     }
 }
@@ -69,8 +96,8 @@ body {
     letter-spacing: 4px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
-    background-color: #f33c3c;
+    color: #1E1014;
+    background-color: #F8333C;
     border: none;
     border-radius: 5px;
     padding: 30px;
@@ -78,9 +105,20 @@ body {
     cursor: pointer;
 }
 
+.playback{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 #audio-playback {
     width: 600px;
     height: 50px;
+}
+
+audio::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel {
+    background-color: #fff;
 }
 
 .download {
@@ -90,7 +128,7 @@ body {
 
 #downloadButton {
     text-decoration: none;
-    color: #fff;
+    color: #1E1014;
 }
 
 #downloadContainer {
@@ -98,8 +136,8 @@ body {
     letter-spacing: 4px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
-    background-color: #000;
+    color: #1E1014;
+    background-color: #FBBA72;
     border: none;
     border-radius: 5px;
     padding: 20px;
@@ -117,9 +155,5 @@ body {
 
     #stopButton {
         margin: 20px 0;
-    }
-
-    #audio-playback {
-        width: 100%;
     }
 }
