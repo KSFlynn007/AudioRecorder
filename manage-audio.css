@@ -1,0 +1,125 @@
+body {
+    font-size: 15px;
+}
+
+/* used to set default load to show Option A until toggled */
+.hidden {
+    display: none;
+}
+
+.inactive {
+    background-color: #eee !important;
+    color: #666 !important;
+    cursor: default !important;
+}
+
+.recorder-instructions
+{
+    margin: 10px 0 0 10px;
+}
+
+.recorder-instructions>*>h2
+{
+    font-size: 18px;
+    color: #666;
+}
+
+.recorder-instructions>*>p {
+    margin: 0;
+}
+
+/* recorder buttons start */
+.audio-record {
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#recordButton {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background: #01C460;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.button-animate {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 3px 1px #01c45f70;
+    }
+
+    100% {
+        box-shadow: 0px 0px 3px 10px #01c45f70;
+
+    }
+}
+
+#stopButton {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f33c3c;
+    border: none;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+#audio-playback {
+    width: 600px;
+    height: 50px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+}
+
+#downloadButton {
+    text-decoration: none;
+    color: #fff;
+}
+
+#downloadContainer {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* recorder buttons end */
+
+
+@media all and (max-width: 643px) {
+    .audio-record {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stopButton {
+        margin: 20px 0;
+    }
+
+    #audio-playback {
+        width: 100%;
+    }
+}
