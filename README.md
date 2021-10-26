@@ -4,3 +4,5 @@ In-browser audio recorder that uses system's microphone to record up to 5 minute
 ## Technologies Used
 1. MediaRecorder Web API
 2. jQuery v 3.6.0
+
+## Hosted on gh-pages
